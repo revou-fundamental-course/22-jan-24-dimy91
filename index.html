@@ -6,7 +6,7 @@
         </head>
         <body>
             <nav class="navigation-grocery">
-                <img src="Assets/Moqups.png" alt="logo" class="logo">
+                <img src="Assets/logo.jpeg" class="logo">
                 <ul class="navigation-items">
                     <li>Home</li>
                     <li>Our Package</li>
@@ -14,22 +14,80 @@
                 </ul>
             </nav>
             <header>
-                <h1>Top Rated E-Groceries Shop in Indonesian</h1>
-                <h4 id="h4">Every Day with Best Ingredients</h4>
+                <h1 id="kakak">Toko Grosir Terlengkap dan Terbesar di Indonesia</h1>
+                <h4 id="adik">Gunakanlah Bahan-bahan Terbaik untuk Makanan Anda setiap Harinya</h4>
             </header>
 
             <main>
                 <div class="toko">
-                    <img src="Assets/tokobuah.jpg" class="tokobuah">
+                    <img class="img-slideshow" src="Assets/a-grocery-store.webp">
+                    <img class="img-slideshow" src="Assets/sayuran.jpg">
+                    <img class="img-slideshow" src="Assets/tokobuah.jpg">
+
+                    <button onclick="plusDivs(-1)" id="sebelum">Previous</button>
+                    <button onclick="plusDivs(1)" id="sesudah">Next</button>
+                    <script src="JS/script.js"></script>
+                    <br>
+
+
+                    <p id="selogan">Belilah bahan pokok anda hanya dengan sekali klik di sini</p>
+                    <P id="profile"> <img src="Assets/profile.jpeg" class="foto"></P>
+                    <span class="namapemilik" >Ahmad Dimyati</span>
+                    <span class="telppemilik">08212148665</span>
+
+                    <h2 class="benefit">Yang pasti anda dapatkan</h2>
+                    <ol type="1" class="benefitmu">
+                        <li>Bahan Makanan yang Segar</li>
+                        <li>Terjamin Halal</li>
+                        <li>Pengantaran Cepat</li>
+                    </ol>
+
+
                 </div>
 
                 <div class="pemesanan">
                     <form action="" method="post">
-                        <h4>Contact Us</h4>
-                        <h5>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</h5>
+                        <h2 id="hubungi">Contact Us</h2>
+                        <h3 id="anakhubungi">Sales akan menghubungi anda 1x24 jam setelah data kami terima.</h3>
+                        <br>
+                        <h3 id="anakhubungi">Silahkan isi form di bawah ini dengan identitas dan pesanan anda</h3>
+                        <label for="nama" class="label"> Nama : </label>
+                        <input id="nama" type="text" class="input"/>
+                        <br>
+                        <label for="notelp" class="label"> Nomor HP : </label>
+                        <input id="notelp" type="tel" class="input"> 
+                        <br>
+                        <label for="email" class="label"> Alamat e-mail : </label>
+                        <input id="email" type="email" class="input">
+                        <br>
+                        <label for="pesanan" class="label"> Barang yang Anda Inginkan : </label>
+                        <select id="pesanan" name="pesanan" class="input">
+                            <option value="sembako">Sembako</option>
+                            <option value="bumbu">Bumbu Masakan</option>
+                            <option value="sayuran">Sayur Mayur</option>
+                            <option value="buah">Buah-buahan</option>
+                            <option value="lain">Lain-lain</option>    
+                        </select>
+                        <input type="submit" value="OK" class="submit">
                     </form> 
                 </div>
             </main>
+            <aside>
+                <h1 class="kakaproduk"> Produk Kita</h1>
+                <div class="produk">
+                    <div>
+                        <h3 class="adikproduk">Sembako</h3>
+                        <h4 class="anakproduk">Sembilan bahan pokok yang terjamin kualitasnya disediakan langsung oleh petani dan divalidasi kualitasnya oleh ahli</h4>
+                        <img src="">
+                    </div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                </div>
+            </aside>
 
+            
         </body>
+    
     </html>
