@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
     <html>
         <head>
             <title>Project 1</title>
@@ -8,9 +8,9 @@
             <nav class="navigation-grocery">
                 <img src="Assets/logo.jpeg" class="logo">
                 <ul class="navigation-items">
-                    <li>Home</li>
-                    <li>Our Package</li>
-                    <li>Call Us</li>
+                    <li><a href="#toko">Home</a> </li>
+                    <li><a href="#produkkita">Our Package</a></li>
+                    <li><a href="#saran">Call Us</a></li>
                 </ul>
             </nav>
             <header>
@@ -19,7 +19,7 @@
             </header>
 
             <main>
-                <div class="toko">
+                <div class="toko" id="toko">
                     <img class="img-slideshow" src="Assets/a-grocery-store.webp">
                     <img class="img-slideshow" src="Assets/sayuran.jpg">
                     <img class="img-slideshow" src="Assets/tokobuah.jpg">
@@ -33,7 +33,7 @@
                     <p id="selogan">Belilah bahan pokok anda hanya dengan sekali klik di sini</p>
                     <P id="profile"> <img src="Assets/profile.jpeg" class="foto"></P>
                     <span class="namapemilik" >Ahmad Dimyati</span>
-                    <span class="telppemilik">08212148665</span>
+                    <span class="telppemilik">Admin Web Kampus, 33thn</span>
 
                     <h2 class="benefit">Yang pasti anda dapatkan</h2>
                     <ol type="1" class="benefitmu">
@@ -46,19 +46,19 @@
                 </div>
 
                 <div class="pemesanan">
-                    <form name="message-form" onsubmit="return validateform()">
+                    <form action="#" method="post" onsubmit="validasi()">
                         <h2 id="hubungi">Contact Us</h2>
                         <h3 id="anakhubungi">Sales akan menghubungi anda 1x24 jam setelah data kami terima.</h3>
                         <br>
                         <h3 id="anakhubungi">Silahkan isi form di bawah ini dengan identitas dan pesanan anda</h3>
                         <label for="nama" class="label"> Nama : </label>
-                        <input placeholder="Nama Lengkap" name="namalengkap" id="nama" type="text" class="input"/>
+                        <input placeholder="Nama Lengkap" name="namalengkap" id="nama" type="text" class="input" autocomplete="off"/>
                         <br>
                         <label for="notelp" class="label"> Nomor HP : </label>
                         <input placeholder="+62 ..." name="nomertelp" id="notelp" type="tel" class="input"> 
                         <br>
                         <label for="email" class="label"> Alamat e-mail : </label>
-                        <input placeholder="example@email.com" name="alamatemail" id="email" type="email" class="input">
+                        <input placeholder="example@email.com" name="alamatemail" id="email" type="email" class="input" autocomplete="off">
                         <br>
                         <label for="pesanan" class="label"> Barang yang Anda Inginkan : </label>
                         <select id="pesanan" name="pesanannya" class="input">
@@ -67,13 +67,13 @@
                             <option value="bumbu">Bumbu Masakan</option>
                             <option value="sayuran">Sayur Mayur</option>
                             <option value="buah">Buah-buahan</option>
-                            <option value="lain">Lain-lain</option>    
-
-                        <input type="submit" value="Submit" class="submit" id="submit">
+                            <option value="lain">Lain-lain</option>   
+                        <input type="submit" value="PESAN" class="pesan" id="tombolpesan">
+                        <script src="JS/script.js"></script>
                     </form> 
                 </div>
             </main>
-            <aside>
+            <aside id="produkkita">
                 <h1 class="kakaproduk"> Produk Kita</h1>
                 <div class="produk">
                     <div>

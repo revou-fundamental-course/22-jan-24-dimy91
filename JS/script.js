@@ -22,24 +22,14 @@ setInterval(() => {
 plusDivs(1);
 }, 1500);
 
-function validateForm() {
-   const namapembeli = document.forms["message-form"]["namalengkap"].value;
-   const notelppembeli = document.forms["message-form"]["nomertelp"].value;
-   const emailpembeli = document.forms["message-form"]["alamatemail"].value;
-   const pesananpembeli = document.forms["message-form"]["pesanannya"].value;
-   
-   if (namapembeli == "" || notelppembeli == "" || emailpembeli == "" || pesananpembeli == "")
-   {alert("Tidak boleh ada data kosong");
-   return false;
-}
+function validation(){
+   var nama =document.getElementById("nama");
+   var notelp =document.getElementById("notelp");
+   var email =document.getElementById("email");
 
-setSenderUI(namapembeli, notelppembeli, emailpembeli, pesananpembeli);
-return false;
-}
-
-function setSenderUI(namapembeli, notelppembeli, emailpembeli, pesananpembeli) {
-   document.getElementById("sender-namalengkap").innerHTML = namapembeli;
-   document.getElementById("sender-nomertelp").innerHTML = notelppembeli;
-   document.getElementById("sender-alamatemail").innerHTML = emailpembeli;
-   document.getElementById("sender-pesanannya").innerHTML = pesananpembeli;
+   if (nama != "" && notelp !="" && email !=""){
+      return true;
+      }else{
+         alert ('Anda harus mengisi data dengan lengkap');
+      }
 }
