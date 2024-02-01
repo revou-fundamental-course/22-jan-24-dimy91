@@ -46,29 +46,30 @@
                 </div>
 
                 <div class="pemesanan">
-                    <form action="" method="post">
+                    <form name="message-form" onsubmit="return validateform()">
                         <h2 id="hubungi">Contact Us</h2>
                         <h3 id="anakhubungi">Sales akan menghubungi anda 1x24 jam setelah data kami terima.</h3>
                         <br>
                         <h3 id="anakhubungi">Silahkan isi form di bawah ini dengan identitas dan pesanan anda</h3>
                         <label for="nama" class="label"> Nama : </label>
-                        <input id="nama" type="text" class="input"/>
+                        <input placeholder="Nama Lengkap" name="namalengkap" id="nama" type="text" class="input"/>
                         <br>
                         <label for="notelp" class="label"> Nomor HP : </label>
-                        <input id="notelp" type="tel" class="input"> 
+                        <input placeholder="+62 ..." name="nomertelp" id="notelp" type="tel" class="input"> 
                         <br>
                         <label for="email" class="label"> Alamat e-mail : </label>
-                        <input id="email" type="email" class="input">
+                        <input placeholder="example@email.com" name="alamatemail" id="email" type="email" class="input">
                         <br>
                         <label for="pesanan" class="label"> Barang yang Anda Inginkan : </label>
-                        <select id="pesanan" name="pesanan" class="input">
+                        <select id="pesanan" name="pesanannya" class="input">
+                            <option value="">-- Pilih Salah Satu --</option>
                             <option value="sembako">Sembako</option>
                             <option value="bumbu">Bumbu Masakan</option>
                             <option value="sayuran">Sayur Mayur</option>
                             <option value="buah">Buah-buahan</option>
                             <option value="lain">Lain-lain</option>    
-                        </select>
-                        <input type="submit" value="OK" class="submit">
+
+                        <input type="submit" value="Submit" class="submit" id="submit">
                     </form> 
                 </div>
             </main>
@@ -76,18 +77,49 @@
                 <h1 class="kakaproduk"> Produk Kita</h1>
                 <div class="produk">
                     <div>
+                        <img src="Assets/sembako.jpg" class="sketsaproduk">
                         <h3 class="adikproduk">Sembako</h3>
-                        <h4 class="anakproduk">Sembilan bahan pokok yang terjamin kualitasnya disediakan langsung oleh petani dan divalidasi kualitasnya oleh ahli</h4>
-                        <img src="">
+                        <h4 class="anakproduk">Sembilan bahan pokok yang terjamin kualitasnya, disediakan langsung oleh petani dan divalidasi kualitasnya oleh ahli</h4>
                     </div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
+                    <div>
+                        <img src="Assets/bumbu.jpg" class="sketsaproduk">
+                        <h3 class="adikproduk">Bumbu Masakan</h3>
+                        <h4 class="anakproduk">Bumbu yang tersedia terbagi menjadi 2 jenis, bumbu original dan bumbu olahan, keduanya terjamin kualitasnya karena diracik oleh ahli</h4>
+                    </div>
+                    <div>
+                        <img src="Assets/sayur.jpg" class="sketsaproduk">
+                        <h3 class="adikproduk">Sayur Mayur</h3>
+                        <h4 class="anakproduk">Sayuran yang tersedia merupakan sayuran terbaik se-Indonesia karena kami menyeleksi sayuran-sayuran dipasarkan di kami</h4>
+                    </div>
+                    <div>
+                        <img src="Assets/buah.jpg" class="sketsaproduk">
+                        <h3 class="adikproduk">Buah-buahan</h3>
+                        <h4 class="anakproduk">Buah yang tersedia merupakan buah-buahan terbaik se-Indonesia karena kami menyeleksi buah-buahan dipasarkan di kami </h4>
+                    </div>
+                    <div>
+                        <img src="Assets/lain.jpg" class="sketsaproduk">
+                        <h3 class="adikproduk">Lain-lain</h3>
+                        <h4 class="anakproduk">Kami pun menjual bahan-bahan lain yang biasa digunakan bisa anda tanyakan langsung kepada kami kami sediakan yang terbaik</h4>
+                    </div>
                 </div>
             </aside>
+            <footer>
+                <h1 class="closing">Terima kasih</h1> 
+                <h3 class="adikclosing">Mudah-mudahan anda puas dengan pelayanan kami</h3>
+                <h3 class="adikclosing">Jika anda kurang puas harap langsung hubungi kami pada tombol di bawah ini</h3>
+                <br>
+                <div>
+                    <button id="saran">SARAN</button>
+                </div>
+                
 
+            </footer>
             
         </body>
-    
+    <footer>
+        <hr>
+        <IMG src="Assets/Logo-RevoU.png" class="logoakhir">
+            <h6 class="tandatangan">Ahmad Dimyati</h6>
+            <h6 class="tandatangan">Mini Coding Project Januari 2024</h6> 
+    </footer>
     </html>
