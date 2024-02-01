@@ -22,14 +22,22 @@ setInterval(() => {
 plusDivs(1);
 }, 1500);
 
-function validation(){
-   var nama =document.getElementById("nama");
-   var notelp =document.getElementById("notelp");
-   var email =document.getElementById("email");
+function validateForm(){
+   const nama =document.forms["message-form"]["namalengkap"].value;
+   const notelp =document.form["message-form"]["nomertelp"].value;
+   const email =document.forms["message-form"]["alamatemail"]
 
-   if (nama != "" && notelp !="" && email !=""){
-      return true;
-      }else{
-         alert ('Anda harus mengisi data dengan lengkap');
-      }
+   if (nama == "" || notelp =="" || email ==""){
+         alert ("Anda harus mengisi data dengan lengkap");
+return false;
+}
+
+setSenderUI (nama, notelp, email);
+return false;
+}
+
+function setSenderUI(nama, notelp, email) {
+   document.getElementById("sender-nama").innerHTML = nama;
+   document.getElementById("sender-notelp").innerHTML = notelp;
+   document.getElementById("sender-email").innerHTML = email;   
 }

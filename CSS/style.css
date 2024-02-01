@@ -35,8 +35,9 @@ body {
     align-self: center;
     font-size: 18sp;
     width: 35%;
+    max-height: 15px;
 }
- @media only screen and (max-widht: 600px) {
+@media only screen and (max-widht: 600px) {
 .logo {
     text-align: center;
 }    
@@ -99,7 +100,7 @@ main {
 .foto {
     height: 70px;
     position: relative;
-    margin-left: -50%;
+    margin-left: -60%;
 }
 
 .namapemilik {
@@ -173,17 +174,18 @@ aside {
 .produk {
     display: flex;
     flex-wrap: wrap;
-    background-color: chartreuse;
+    background-color: green;
 }
 
 .produk > div {
-    background-color: green;
-    width: 22%;
+    background-color:  chartreuse;
+    width: 20%;
     margin: 25px;
     line-height: 50px;
     justify-content: center;
     text-align: start;
     padding-left: 7%;
+    padding-right: 1%;
     line-height: 25px;
 }
 .sketsaproduk {
@@ -201,7 +203,6 @@ aside {
 
 .adikclosing {
     text-align: center;
-    line-height: 10px;
     color: palevioletred;
 }
 
@@ -211,6 +212,7 @@ aside {
     display: block; 
     justify-content: center;
     margin-left: 40%;
+    display: block;
 }
 
 .logoakhir {
@@ -224,5 +226,6 @@ aside {
 .tandatangan {
     text-align: center;
     color: gray;
-    line-height: 0.1px;
+    line-height: 2px;
+    display: block;
 }
